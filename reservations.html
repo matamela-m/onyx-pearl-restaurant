@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations | Onyx & Pearl Fine Dining</title>
+  <meta name="description" content="Reserve your table at Onyx & Pearl. Select your date, time, and preferred dining experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-main">Onyx &amp; Pearl</span>
+        <span class="nav__logo-sub">Fine Dining · Est. 2018</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"        class="nav__link">Home</a></li>
+        <li><a href="menu.html"         class="nav__link">Menu</a></li>
+        <li><a href="about.html"        class="nav__link">Our Story</a></li>
+        <li><a href="reservations.html" class="nav__link active">Reservations</a></li>
+        <li><a href="gallery.html"      class="nav__link">Gallery</a></li>
+        <li><a href="contact.html"      class="nav__link">Contact</a></li>
+      </ul>
+      <a href="reservations.html" class="nav__cta">Reserve a Table</a>
+      <button class="nav__hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html"        class="nav__link">Home</a>
+    <a href="menu.html"         class="nav__link">Menu</a>
+    <a href="about.html"        class="nav__link">Our Story</a>
+    <a href="reservations.html" class="nav__link">Reservations</a>
+    <a href="gallery.html"      class="nav__link">Gallery</a>
+    <a href="contact.html"      class="nav__link">Contact</a>
+    <a href="reservations.html" class="btn btn--primary" style="margin-top:16px">Reserve a Table</a>
+  </div>
+
+  <!-- ── PAGE HERO (compact) ── -->
+  <header class="page-hero" style="height:40vh;min-height:300px" aria-label="Reservations hero">
+    <div class="page-hero__bg">
+      <!-- replace src="#" with your reservations hero image URL -->
+      <img src="#" alt="Onyx & Pearl — elegant dining room for reservations" class="img-fill" style="position:absolute;inset:0" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Book Your Evening</p>
+      <h1 class="page-hero__title">Reservations</h1>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════
+       RESERVATION SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="reservation-page" aria-label="Reservation booking">
+    <div class="container">
+      <div class="reservation-layout">
+
+        <!-- Left — Info & Availability -->
+        <div>
+          <div class="reservation-info__label t-subtitle section-label" style="justify-content:flex-start;color:var(--gold)" data-reveal>Secure Your Seat</div>
+          <h2 class="reservation-info__title" data-reveal>Reserve Your<br>Table at<br><em style="font-style:italic">Onyx &amp; Pearl</em></h2>
+          <p class="reservation-info__desc" data-reveal>
+            We accept reservations for parties of 1–12 guests. For larger groups or private
+            events, please contact us directly. We look forward to welcoming you.
+          </p>
+
+          <!-- Real-time availability -->
+          <div class="availability-indicator" data-reveal aria-label="Tonight's availability">
+            <p style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;font-weight:600">Tonight's Availability</p>
+            <div class="avail-item">
+              <span class="avail-item__label">18:00 Seating</span>
+              <span class="avail-item__status">
+                <span class="avail-dot avail-dot--red"></span>
+                <span class="avail-text--full">Fully Booked</span>
+              </span>
+            </div>
+            <div class="avail-item">
+              <span class="avail-item__label">19:30 Seating</span>
+              <span class="avail-item__status">
+                <span class="avail-dot avail-dot--yellow"></span>
+                <span class="avail-text--limited">2 Tables Left</span>
+              </span>
+            </div>
+            <div class="avail-item">
+              <span class="avail-item__label">21:00 Seating</span>
+              <span class="avail-item__status">
+                <span class="avail-dot avail-dot--yellow"></span>
+                <span class="avail-text--limited">Limited</span>
+              </span>
+            </div>
+            <div class="avail-item">
+              <span class="avail-item__label">Chef's Table (Any time)</span>
+              <span class="avail-item__status">
+                <span class="avail-dot avail-dot--green"></span>
+                <span class="avail-text--available">Available</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Urgency -->
+          <div class="urgency-text" data-urgency-wrap data-reveal>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Only <strong data-urgency-count="3" data-min="1" data-max="4">&thinsp;3&thinsp;</strong>&nbsp;tables remaining for tonight's 19:30 seating
+          </div>
+
+          <!-- What to expect -->
+          <div style="margin-top:48px" data-reveal>
+            <p class="t-subtitle text-gold" style="margin-bottom:20px;letter-spacing:0.2em">What to Expect</p>
+            <div style="display:flex;flex-direction:column;gap:0">
+              <div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid rgba(28,28,26,0.08)">
+                <div style="width:32px;height:32px;border:1px solid rgba(138,118,80,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <div style="font-size:0.875rem;font-weight:600;color:var(--charcoal);margin-bottom:3px">Dress Code</div>
+                  <div style="font-size:0.8125rem;color:rgba(28,28,26,0.55)">Smart casual to formal. We kindly request no sportswear or flip-flops.</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid rgba(28,28,26,0.08)">
+                <div style="width:32px;height:32px;border:1px solid rgba(138,118,80,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <div style="font-size:0.875rem;font-weight:600;color:var(--charcoal);margin-bottom:3px">Arrival Time</div>
+                  <div style="font-size:0.8125rem;color:rgba(28,28,26,0.55)">We hold tables for 15 minutes past your reservation. Please notify us if you are running late.</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid rgba(28,28,26,0.08)">
+                <div style="width:32px;height:32px;border:1px solid rgba(138,118,80,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3-8.57A2 2 0 012.06 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6"/></svg>
+                </div>
+                <div>
+                  <div style="font-size:0.875rem;font-weight:600;color:var(--charcoal);margin-bottom:3px">Cancellations</div>
+                  <div style="font-size:0.8125rem;color:rgba(28,28,26,0.55)">We require 24 hours notice for cancellations. Call +27 (12) 010 2230 or email us.</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:16px;padding:16px 0">
+                <div style="width:32px;height:32px;border:1px solid rgba(138,118,80,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                </div>
+                <div>
+                  <div style="font-size:0.875rem;font-weight:600;color:var(--charcoal);margin-bottom:3px">Dietary Requirements</div>
+                  <div style="font-size:0.8125rem;color:rgba(28,28,26,0.55)">Please note any allergies or dietary requirements when booking. Our kitchen accommodates most needs with advance notice.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right — Booking Form -->
+        <div>
+          <div class="booking-form" data-reveal>
+            <h2 class="booking-form__title">Make a Reservation</h2>
+            <p class="booking-form__sub">All fields are required unless marked optional</p>
+
+            <form novalidate>
+
+              <!-- Name -->
+              <div class="form-group form-group--half">
+                <div>
+                  <label class="form-label" for="first-name">First Name</label>
+                  <input class="form-input" type="text" id="first-name" name="first-name" placeholder="Michael" autocomplete="given-name" required />
+                </div>
+                <div>
+                  <label class="form-label" for="last-name">Last Name</label>
+                  <input class="form-input" type="text" id="last-name" name="last-name" placeholder="Tshabalala" autocomplete="family-name" required />
+                </div>
+              </div>
+
+              <!-- Contact -->
+              <div class="form-group form-group--half">
+                <div>
+                  <label class="form-label" for="email">Email Address</label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+                </div>
+                <div>
+                  <label class="form-label" for="phone">Phone Number</label>
+                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="+27 (12) 010 0000" autocomplete="tel" required />
+                </div>
+              </div>
+
+              <!-- Date & Time -->
+              <div class="form-group form-group--half">
+                <div>
+                  <label class="form-label" for="date">Preferred Date</label>
+                  <input class="form-input" type="date" id="date" name="date" required />
+                </div>
+                <div>
+                  <label class="form-label" for="time">Preferred Time</label>
+                  <select class="form-select" id="time" name="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="18:00">18:00 — Early Seating</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30 — Prime Seating</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00 — Late Seating</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Guests & Experience -->
+              <div class="form-group form-group--half">
+                <div>
+                  <label class="form-label" for="guests">Number of Guests</label>
+                  <select class="form-select" id="guests" name="guests" required>
+                    <option value="" disabled selected>Select guests</option>
+                    <option value="1">1 Guest — Solo Dining</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="7-12">7–12 Guests (Group)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="form-label" for="experience">Experience</label>
+                  <select class="form-select" id="experience" name="experience">
+                    <option value="a-la-carte">À La Carte</option>
+                    <option value="tasting">7-Course Tasting Menu</option>
+                    <option value="chefs-table">Chef's Table</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Private Dining Toggle -->
+              <div class="private-toggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle private dining">
+                <div class="private-toggle__info">
+                  <div class="private-toggle__title">Private Dining | The Pearl Chamber</div>
+                  <div class="private-toggle__desc">Intimate room for up to 12 · Custom menu available · From $85/head</div>
+                </div>
+                <div class="toggle-switch" aria-hidden="true"></div>
+              </div>
+
+              <!-- Private dining extra (hidden by default) -->
+              <div class="private-dining-extra" style="max-height:0;overflow:hidden;opacity:0;transition:max-height 0.4s ease,opacity 0.4s ease">
+                <div class="form-group" style="margin-top:4px">
+                  <label class="form-label" for="private-notes">Private Dining Notes <span style="text-transform:none;letter-spacing:0;color:rgba(28,28,26,0.4)">(optional)</span></label>
+                  <textarea class="form-textarea" id="private-notes" name="private-notes" placeholder="Tell us about your occasion, menu preferences, décor requests, or any special requirements for your private dining experience..."></textarea>
+                </div>
+              </div>
+
+              <!-- Special Requests -->
+              <div class="form-group">
+                <label class="form-label" for="requests">Special Requests <span style="text-transform:none;letter-spacing:0;color:rgba(28,28,26,0.4)">(optional)</span></label>
+                <textarea class="form-textarea" id="requests" name="requests" placeholder="Dietary requirements, allergies, celebrations, seating preferences..."></textarea>
+              </div>
+
+              <!-- Wine Pairing Add-on -->
+              <div style="display:flex;align-items:center;gap:12px;padding:16px 0;border-top:1px solid rgba(28,28,26,0.08);margin-bottom:24px">
+                <input type="checkbox" id="wine-pairing" name="wine-pairing" style="width:16px;height:16px;accent-color:var(--gold);cursor:pointer" />
+                <label for="wine-pairing" style="cursor:pointer">
+                  <span style="font-size:0.875rem;font-weight:500;color:var(--charcoal)">Add Wine Pairing </span>
+                  <span style="font-size:0.8125rem;color:var(--gold)">+R1500 per person</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;padding:18px">
+                Reserve My Table
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+
+              <p style="font-size:0.75rem;color:rgba(28,28,26,0.4);text-align:center;margin-top:16px;line-height:1.6">
+                By submitting this form you agree to our cancellation policy.
+                A confirmation will be sent to your email within 2 hours.
+              </p>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       TABLE SELECTION UI
+  ═══════════════════════════════════════════════ -->
+  <section style="background:var(--cream);padding-bottom:var(--section-pad)" aria-label="Table selection">
+    <div class="container">
+      <div class="table-selection">
+        <div class="section-label t-subtitle text-gold" style="justify-content:flex-start;margin-bottom:16px" data-reveal>
+          Choose Your Spot
+        </div>
+        <h2 class="table-selection__title" data-reveal>Select a Table</h2>
+        <p class="table-selection__sub" data-reveal>
+          Click any available table to request it. Our team will confirm your preferred table when processing your reservation.
+        </p>
+
+        <div class="floor-plan" data-reveal>
+          <p class="floor-plan__label">Onyx &amp; Pearl | Main Dining Room Floor Plan</p>
+
+          <div class="floor-plan__inner" role="group" aria-label="Restaurant floor plan">
+            <!-- Decorative zones -->
+            <div class="floor-plan__bar">Bar &amp; Lounge</div>
+            <div style="grid-column:3/5;grid-row:1/2;width:100%;height:44px;background:rgba(142,151,125,0.1);border:1px dashed rgba(142,151,125,0.3);display:flex;align-items:center;justify-content:center;font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(28,28,26,0.3)">Open Space</div>
+            <div class="floor-plan__kitchen">Kitchen Pass</div>
+
+            <!-- Tables — Row 2 -->
+            <button class="table-btn unavailable" data-table-id="T1" aria-label="Table 1 — unavailable">T1</button>
+            <button class="table-btn unavailable" data-table-id="T2" aria-label="Table 2 — unavailable">T2</button>
+            <button class="table-btn" data-table-id="T3" aria-label="Table 3 — available">T3</button>
+            <button class="table-btn" data-table-id="T4" aria-label="Table 4 — available">T4</button>
+            <button class="table-btn unavailable" data-table-id="T5" aria-label="Table 5 — unavailable">T5</button>
+            <button class="table-btn" data-table-id="T6" aria-label="Table 6 — available">T6</button>
+
+            <!-- Tables — Row 3 -->
+            <button class="table-btn" data-table-id="T7" aria-label="Table 7 — available">T7</button>
+            <button class="table-btn unavailable" data-table-id="T8" aria-label="Table 8 — unavailable">T8</button>
+            <button class="table-btn unavailable" data-table-id="T9" aria-label="Table 9 — unavailable">T9</button>
+            <button class="table-btn" data-table-id="T10" aria-label="Table 10 — available">T10</button>
+            <button class="table-btn" data-table-id="T11" aria-label="Table 11 — available">T11</button>
+            <button class="table-btn unavailable" data-table-id="T12" aria-label="Table 12 — unavailable">T12</button>
+
+            <!-- Tables — Row 4 (Window) -->
+            <button class="table-btn table-btn--rect" data-table-id="W1" aria-label="Window table W1 — available" style="grid-column:span 1">W1</button>
+            <button class="table-btn table-btn--rect" data-table-id="W2" aria-label="Window table W2 — available">W2</button>
+            <button class="table-btn table-btn--rect unavailable" data-table-id="W3" aria-label="Window table W3 — unavailable">W3</button>
+            <button class="table-btn table-btn--rect" data-table-id="W4" aria-label="Window table W4 — available">W4</button>
+            <button class="table-btn table-btn--rect unavailable" data-table-id="W5" aria-label="Window table W5 — unavailable">W5</button>
+            <button class="table-btn table-btn--rect" data-table-id="W6" aria-label="Window table W6 — available">W6</button>
+          </div>
+
+          <!-- Selected info -->
+          <p class="table-selection__selected-info" style="margin-top:16px;font-size:0.8rem;color:var(--gold);font-weight:600;opacity:0;transition:opacity 0.3s;height:20px"></p>
+
+          <!-- Legend -->
+          <div class="floor-plan__legend">
+            <div class="legend-item">
+              <div class="legend-dot legend-dot--available"></div>
+              Available
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot legend-dot--selected"></div>
+              Selected
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot legend-dot--taken"></div>
+              Reserved
+            </div>
+          </div>
+        </div>
+
+        <!-- Window note -->
+        <p style="font-size:0.8rem;color:rgba(28,28,26,0.45);margin-top:16px">
+          <em>W — Window tables. T — Main dining room. Chef's Table available on request for groups of 2–6.</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       PRIVATE DINING PROMO
+  ═══════════════════════════════════════════════ -->
+  <section style="background:var(--charcoal);padding:var(--section-pad) 0" aria-label="Private Dining">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,8vw,100px);align-items:center">
+        <div data-reveal="left">
+          <!-- replace src="#" with your Pearl Chamber / private dining image URL -->
+          <div style="aspect-ratio:4/3;width:100%;overflow:hidden">
+            <img src="content/pearl-chamber.png" alt="The Pearl Chamber — private dining room at Onyx & Pearl" class="img-fill" />
+          </div>
+        </div>
+        <div data-reveal>
+          <div class="section-label t-subtitle" style="color:var(--gold);justify-content:flex-start;margin-bottom:16px">Exclusive &amp; Intimate</div>
+          <h2 style="font-family:var(--font-serif);font-size:clamp(1.8rem,3.5vw,3rem);color:var(--cream);line-height:1.1;margin-bottom:20px">The Pearl<br>Chamber</h2>
+          <p style="font-size:0.9375rem;color:rgba(236,231,209,0.6);line-height:1.85;margin-bottom:32px">
+            Our private dining room seats up to 12 guests in an atmosphere of complete
+            intimacy. With its own dedicated service team and a bespoke menu curated
+            by Chef Michael, The Pearl Chamber transforms any occasion into a memory
+            that endures.
+          </p>
+          <ul style="display:flex;flex-direction:column;gap:12px;margin-bottom:36px">
+            <li style="display:flex;gap:12px;align-items:center;font-size:0.875rem;color:rgba(236,231,209,0.65)">
+              <span style="color:var(--gold);font-size:0.8rem">✦</span> Accommodates 2–12 guests
+            </li>
+            <li style="display:flex;gap:12px;align-items:center;font-size:0.875rem;color:rgba(236,231,209,0.65)">
+              <span style="color:var(--gold);font-size:0.8rem">✦</span> Bespoke menu consultation with Chef Michael
+            </li>
+            <li style="display:flex;gap:12px;align-items:center;font-size:0.875rem;color:rgba(236,231,209,0.65)">
+              <span style="color:var(--gold);font-size:0.8rem">✦</span> Curated wine journey with our Sommelier
+            </li>
+            <li style="display:flex;gap:12px;align-items:center;font-size:0.875rem;color:rgba(236,231,209,0.65)">
+              <span style="color:var(--gold);font-size:0.8rem">✦</span> Personalised table décor and occasion setup
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn--gold-outline">Enquire About Private Dining</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Onyx &amp; Pearl</div>
+          <div class="footer__brand-sub">Fine Dining · Est. 2018</div>
+          <p class="footer__tagline">A cinematic dining destination in the heart of the city.</p>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Navigate</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Experiences</h3>
+          <ul class="footer__links">
+            <li><a href="reservations.html">Tasting Menu</a></li>
+            <li><a href="reservations.html">Private Dining</a></li>
+            <li><a href="reservations.html">Wine Pairing</a></li>
+            <li><a href="reservations.html">Chef's Table</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Visit</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Hours</span>
+            <span class="footer__contact-value">Tuesday–Sunday | 17:00 – 23:00<br>Monday: Closed</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Phone</span>
+            <span class="footer__contact-value">+27 (12) 010 2230</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Onyx &amp; Pearl. All rights reserved.</p>
+        <nav class="footer__bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

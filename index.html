@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onyx & Pearl | An Elevated Dining Experience</title>
+  <meta name="description" content="Onyx & Pearl is a cinematic fine-dining destination offering an extraordinary culinary journey through multi-course tasting menus, exceptional wines, and impeccable hospitality." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <nav class="nav nav--transparent-start transparent" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Onyx & Pearl Home">
+        <span class="nav__logo-main">Onyx &amp; Pearl</span>
+        <span class="nav__logo-sub">Fine Dining · Est. 2018</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"        class="nav__link">Home</a></li>
+        <li><a href="menu.html"         class="nav__link">Menu</a></li>
+        <li><a href="about.html"        class="nav__link">Our Story</a></li>
+        <li><a href="reservations.html" class="nav__link">Reservations</a></li>
+        <li><a href="gallery.html"      class="nav__link">Gallery</a></li>
+        <li><a href="contact.html"      class="nav__link">Contact</a></li>
+      </ul>
+
+      <a href="reservations.html" class="nav__cta">Reserve a Table</a>
+
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html"        class="nav__link">Home</a>
+    <a href="menu.html"         class="nav__link">Menu</a>
+    <a href="about.html"        class="nav__link">Our Story</a>
+    <a href="reservations.html" class="nav__link">Reservations</a>
+    <a href="gallery.html"      class="nav__link">Gallery</a>
+    <a href="contact.html"      class="nav__link">Contact</a>
+    <a href="reservations.html" class="btn btn--primary" style="margin-top:16px">Reserve a Table</a>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       HERO — CINEMATIC FULL-SCREEN
+  ═══════════════════════════════════════════════ -->
+  <section class="hero" aria-label="Hero">
+
+    <!-- Hero background video -->
+    <div class="hero__bg">
+      <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block">
+        <source src="content/hero-video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Gradient overlays -->
+    <div class="hero__overlay"></div>
+    <div class="hero__overlay--side"></div>
+
+    <!-- Award badges (desktop) -->
+    <div class="hero__badges" aria-label="Awards">
+      <div class="badge">
+        <span class="badge__number">★</span>
+        <span class="badge__label">Michelin Guide 2024</span>
+      </div>
+      <div class="badge">
+        <span class="badge__number">3×</span>
+        <span class="badge__label">James Beard Finalist</span>
+      </div>
+      <div class="badge">
+        <span class="badge__number">#1</span>
+        <span class="badge__label">City's Best Fine Dining</span>
+      </div>
+    </div>
+
+    <!-- Hero content -->
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="hero__eyebrow-line"></span>
+        <span class="hero__eyebrow-text">Tasting Menu | Spring 2025</span>
+      </div>
+
+      <h1 class="hero__title">
+        An <em>Elevated</em><br>Dining Experience
+      </h1>
+
+      <p class="hero__subtitle">
+        Where every plate tells a story: crafted with obsession,
+        served with grace, remembered for a lifetime.
+      </p>
+
+      <div class="hero__actions">
+        <a href="reservations.html" class="btn btn--primary btn--large">
+          Reserve a Table
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="menu.html" class="btn btn--outline">
+          View Menu
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span class="hero__scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       INTRO STRIP
+  ═══════════════════════════════════════════════ -->
+  <div class="intro-strip">
+    <div class="intro-strip__inner">
+      <div class="intro-strip__item">
+        <div class="intro-strip__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <div class="intro-strip__text">
+          <span class="intro-strip__label">Dinner Service</span>
+          <span class="intro-strip__value">Tuesday – Sunday, 17:00 – 23:00</span>
+        </div>
+      </div>
+      <div class="intro-strip__sep" aria-hidden="true"></div>
+      <div class="intro-strip__item">
+        <div class="intro-strip__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M3 11l19-9-9 19-2-8-8-2z"/>
+          </svg>
+        </div>
+        <div class="intro-strip__text">
+          <span class="intro-strip__label">Location</span>
+          <span class="intro-strip__value">12 Artisan Quarter, Johannesburg</span>
+        </div>
+      </div>
+      <div class="intro-strip__sep" aria-hidden="true"></div>
+      <div class="intro-strip__item">
+        <div class="intro-strip__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3-8.57A2 2 0 012.06 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </div>
+        <div class="intro-strip__text">
+          <span class="intro-strip__label">Reservations</span>
+          <span class="intro-strip__value">+27 (12) 010 2230</span>
+        </div>
+      </div>
+      <div class="intro-strip__sep" aria-hidden="true"></div>
+      <div class="intro-strip__item">
+        <div class="intro-strip__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <div class="intro-strip__text">
+          <span class="intro-strip__label">Recognition</span>
+          <span class="intro-strip__value">Michelin Guide Recommended</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       AWARDS
+  ═══════════════════════════════════════════════ -->
+  <section class="awards" aria-label="Awards and Recognition">
+    <div class="awards__inner">
+      <div class="award-item" data-reveal>
+        <div class="award-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+          </svg>
+        </div>
+        <div class="award-item__name">Michelin Guide<br>Recommended</div>
+        <div class="award-item__year">2022 – 2025</div>
+      </div>
+      <div class="awards__sep" aria-hidden="true"></div>
+      <div class="award-item" data-reveal>
+        <div class="award-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <div class="award-item__name">James Beard Award<br>Finalist</div>
+        <div class="award-item__year">Best New Restaurant 2019</div>
+      </div>
+      <div class="awards__sep" aria-hidden="true"></div>
+      <div class="award-item" data-reveal>
+        <div class="award-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="award-item__name">Wine Spectator<br>Award of Excellence</div>
+        <div class="award-item__year">2021 – 2025</div>
+      </div>
+      <div class="awards__sep" aria-hidden="true"></div>
+      <div class="award-item" data-reveal>
+        <div class="award-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+          </svg>
+        </div>
+        <div class="award-item__name">Top 10 Restaurants<br>in the City</div>
+        <div class="award-item__year">Zagat 2024</div>
+      </div>
+      <div class="awards__sep" aria-hidden="true"></div>
+      <div class="award-item" data-reveal>
+        <div class="award-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
+          </svg>
+        </div>
+        <div class="award-item__name">Best Fine Dining<br>Experience</div>
+        <div class="award-item__year">City Awards 2024</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       SIGNATURE DISHES
+  ═══════════════════════════════════════════════ -->
+  <section class="dishes section-pad" aria-label="Signature Dishes">
+    <div class="container">
+      <div class="dishes__header">
+        <div>
+          <div class="section-label t-subtitle text-gold" data-reveal>
+            Signature Creations
+          </div>
+          <h2 class="t-h1" style="margin-top:16px" data-reveal>Plates That<br><em style="font-family:var(--font-serif);font-style:italic;color:var(--gold)">Define Us</em></h2>
+        </div>
+        <a href="menu.html" class="btn-arrow" data-reveal>Explore Full Menu</a>
+      </div>
+
+      <div class="dishes__grid">
+
+        <article class="dish-card" data-reveal>
+          <div class="dish-card__image">
+            <!-- replace src="#" with your dish image URL -->
+            <img src="content/obsidian-wagyu.png" alt="Obsidian-Seared Wagyu — A5 Japanese Wagyu striploin" class="img-fill" style="aspect-ratio:3/4" />
+            <div class="dish-card__label">Chef's Choice</div>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__number">01</div>
+            <h3 class="dish-card__name">Obsidian-Seared Wagyu</h3>
+            <p class="dish-card__desc">A5 Japanese Wagyu, black garlic reduction, truffle oil, microgreens, 24-hour bone broth gel.</p>
+            <div class="dish-card__price">R1600</div>
+          </div>
+        </article>
+
+        <article class="dish-card" data-reveal>
+          <div class="dish-card__image">
+            <!-- replace src="#" with your dish image URL -->
+            <img src="content/pearl-halibut.png" alt="Pearl Halibut en Papillote — Pacific halibut, saffron beurre blanc" class="img-fill" style="aspect-ratio:3/4" />
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__number">02</div>
+            <h3 class="dish-card__name">Pearl Halibut en Papillote</h3>
+            <p class="dish-card__desc">Pacific halibut, saffron beurre blanc, fennel frond, preserved lemon, Ossetra caviar.</p>
+            <div class="dish-card__price">R1200</div>
+          </div>
+        </article>
+
+        <article class="dish-card" data-reveal>
+          <div class="dish-card__image">
+            <!-- replace src="#" with your dish image URL -->
+            <img src="content/garden-harvest.png" alt="Garden Harvest Risotto — heirloom vegetables, black winter truffle" class="img-fill" style="aspect-ratio:3/4" />
+            <div class="dish-card__label">Seasonal</div>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__number">03</div>
+            <h3 class="dish-card__name">Garden Harvest Risotto</h3>
+            <p class="dish-card__desc">Heirloom vegetable risotto, aged Parmigiano-Reggiano, black winter truffle, herb oil.</p>
+            <div class="dish-card__price">R900</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       URGENCY BANNER
+  ═══════════════════════════════════════════════ -->
+  <div class="urgency-banner" data-urgency-wrap>
+    <div class="urgency-banner__inner">
+      <div class="urgency-banner__pulse" aria-hidden="true"></div>
+      <p class="urgency-banner__text">
+        Only <strong data-urgency-count="3" data-min="1" data-max="4">3</strong> tables remaining for this evening
+      </p>
+      <a href="reservations.html" class="urgency-banner__cta">Secure Your Table Now →</a>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       MENU PREVIEW
+  ═══════════════════════════════════════════════ -->
+  <section class="menu-preview" aria-label="Menu Preview">
+    <div class="container">
+      <div class="menu-preview__grid">
+        <div>
+          <div class="section-label t-subtitle" style="color:var(--gold);justify-content:flex-start" data-reveal>
+            Tonight's Selection
+          </div>
+          <h2 class="menu-preview__title" data-reveal>A Menu Built<br>on <em style="font-style:italic">Intention</em></h2>
+          <p class="menu-preview__desc" data-reveal>
+            Each dish on our menu is the result of relentless refinement: inspired by
+            seasonal provenance, classical technique, and a pursuit of the unexpected.
+          </p>
+
+          <div class="menu-preview__items">
+            <div class="menu-preview__item" data-reveal>
+              <div class="menu-preview__item-info">
+                <div class="menu-preview__item-name">Amuse-bouche</div>
+                <div class="menu-preview__item-desc">Chef's daily selection — a single perfect bite</div>
+              </div>
+              <div class="menu-preview__item-price">Complimentary</div>
+            </div>
+            <div class="menu-preview__item" data-reveal>
+              <div class="menu-preview__item-info">
+                <div class="menu-preview__item-name">Chilled Pea & Mint Velouté</div>
+                <div class="menu-preview__item-desc">Garden peas, crème fraîche, smoked salmon roe</div>
+              </div>
+              <div class="menu-preview__item-price">R450</div>
+            </div>
+            <div class="menu-preview__item" data-reveal>
+              <div class="menu-preview__item-info">
+                <div class="menu-preview__item-name">Roasted Duck Breast</div>
+                <div class="menu-preview__item-desc">Cherry jus, celeriac purée, crispy duck fat potato</div>
+              </div>
+              <div class="menu-preview__item-price">R1100</div>
+            </div>
+            <div class="menu-preview__item" data-reveal>
+              <div class="menu-preview__item-info">
+                <div class="menu-preview__item-name">Valrhona Chocolate Délice</div>
+                <div class="menu-preview__item-desc">Dark ganache, salted caramel, tonka bean ice cream</div>
+              </div>
+              <div class="menu-preview__item-price">R400</div>
+            </div>
+          </div>
+
+          <div style="margin-top:40px" data-reveal>
+            <a href="menu.html" class="btn btn--gold-outline">View Complete Menu</a>
+          </div>
+        </div>
+
+        <!-- Image — replace src="#" with your featured dish image URL -->
+        <div class="menu-preview__image" data-reveal="right">
+          <img src="content/roasted-duck.png" alt="Roasted Duck Breast — cherry jus, celeriac purée" class="img-fill" />
+          <div class="menu-preview__image-caption">
+            <div class="menu-preview__image-caption-title">Roasted Duck Breast</div>
+            <div class="menu-preview__image-caption-sub">Chef's Signature | Spring Edition</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       TASTING EXPERIENCE
+  ═══════════════════════════════════════════════ -->
+  <section class="tasting" aria-label="Tasting Experience">
+    <div class="tasting__bg-text" aria-hidden="true">Tasting</div>
+    <div class="container">
+      <div class="tasting__inner">
+
+        <!-- Image — replace src="#" with your tasting menu / food image URL -->
+        <div class="tasting__image" data-reveal="left">
+          <img src="content/seven-dishes.png" alt="Seven-course tasting experience at Onyx & Pearl" class="img-fill" />
+          <div class="tasting__image-badge">
+            <span class="tasting__image-badge-num">7</span>
+            <span class="tasting__image-badge-text">Course<br>Experience</span>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div>
+          <div class="tasting__label t-subtitle section-label" style="justify-content:flex-start" data-reveal>The Onyx Experience</div>
+          <h2 class="tasting__title" data-reveal>Where Every<br>Course Tells <em style="font-style:italic">a Story</em></h2>
+          <p class="tasting__desc" data-reveal>
+            Our signature tasting menu is a seven-act narrative: each course
+            building on the last, weaving flavour, texture, and memory into
+            something you will carry long after the final bite.
+          </p>
+
+          <div class="tasting__courses" data-reveal>
+            <div class="tasting__course">
+              <span class="tasting__course-num">I</span>
+              <div class="tasting__course-info">
+                <div class="tasting__course-name">Amuse | A Welcome Gesture</div>
+                <div class="tasting__course-desc">A petit bite to set the tone of the evening</div>
+              </div>
+            </div>
+            <div class="tasting__course">
+              <span class="tasting__course-num">II</span>
+              <div class="tasting__course-info">
+                <div class="tasting__course-name">Cold Starter | The Garden Awakens</div>
+                <div class="tasting__course-desc">Seasonal vegetables, chilled preparations, delicate acidity</div>
+              </div>
+            </div>
+            <div class="tasting__course">
+              <span class="tasting__course-num">III</span>
+              <div class="tasting__course-info">
+                <div class="tasting__course-name">Warm Starter | Fire & Smoke</div>
+                <div class="tasting__course-desc">Roasted, charred, smoked: elemental flavours</div>
+              </div>
+            </div>
+            <div class="tasting__course">
+              <span class="tasting__course-num">IV</span>
+              <div class="tasting__course-info">
+                <div class="tasting__course-name">Fish Course | The Ocean's Gift</div>
+                <div class="tasting__course-desc">Day-boat fish, foraged coastal greens, sea mineral broth</div>
+              </div>
+            </div>
+            <div class="tasting__course">
+              <span class="tasting__course-num">V</span>
+              <div class="tasting__course-info">
+                <div class="tasting__course-name">Main | The Centrepiece</div>
+                <div class="tasting__course-desc">Heritage breed, aged or cured, the heart of the menu</div>
+              </div>
+            </div>
+            <div class="tasting__course">
+              <span class="tasting__course-num">VI</span>
+              <div class="tasting__course-info">
+                <div class="tasting__course-name">Pre-Dessert | The Palate Cleanser</div>
+                <div class="tasting__course-desc">A moment of levity before the sweet finale</div>
+              </div>
+            </div>
+            <div class="tasting__course">
+              <span class="tasting__course-num">VII</span>
+              <div class="tasting__course-info">
+                <div class="tasting__course-name">Dessert | The Lasting Memory</div>
+                <div class="tasting__course-desc">Chocolate, caramel, spice: an unforgettable conclusion</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tasting__price-block" data-reveal>
+            <div>
+              <div class="tasting__price">R3500 <span style="font-size:1rem;opacity:0.6">per person</span></div>
+              <div class="tasting__price-label">Wine pairing available +R1500</div>
+            </div>
+            <a href="reservations.html" class="btn btn--primary">Book the Experience</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       GALLERY TEASER
+  ═══════════════════════════════════════════════ -->
+  <section class="gallery-teaser" aria-label="Gallery Preview">
+    <div class="container">
+      <div class="gallery-teaser__header">
+        <div>
+          <div class="section-label t-subtitle text-gold" style="justify-content:flex-start" data-reveal>The Space</div>
+          <h2 class="t-h1" style="margin-top:14px" data-reveal>A World Unto <em style="font-family:var(--font-serif);font-style:italic;color:var(--gold)">Itself</em></h2>
+        </div>
+        <a href="gallery.html" class="btn-arrow" data-reveal>View Gallery</a>
+      </div>
+
+      <div class="gallery-teaser__grid">
+        <div class="gallery-teaser__item gallery-teaser__item--tall" data-reveal="left">
+          <!-- replace src="#" with your main dining room interior image URL -->
+          <img src="content/main-dining.png" alt="Main dining room — Onyx & Pearl interior" class="img-fill" style="min-height:520px" />
+          <div class="gallery-teaser__item-overlay"></div>
+          <div class="gallery-teaser__item-label">Main Dining Room</div>
+        </div>
+        <div class="gallery-teaser__item" data-reveal>
+          <!-- replace src="#" with your signature dish image URL -->
+          <img src="content/obsidian-wagyu.png" alt="Signature dish — Onyx & Pearl culinary artistry" class="img-fill" style="aspect-ratio:4/3" />
+          <div class="gallery-teaser__item-overlay"></div>
+          <div class="gallery-teaser__item-label">Signature Creation</div>
+        </div>
+        <div class="gallery-teaser__item" data-reveal>
+          <!-- replace src="#" with your wine cellar / bar image URL -->
+          <img src="content/wine-cell.png" alt="Curated wine cellar selection at Onyx & Pearl" class="img-fill" style="aspect-ratio:4/3" />
+          <div class="gallery-teaser__item-overlay"></div>
+          <div class="gallery-teaser__item-label">Cellar Selection</div>
+        </div>
+        <div class="gallery-teaser__item" data-reveal>
+          <!-- replace src="#" with your garden terrace image URL -->
+          <img src="content/garden-terrace.png" alt="Garden terrace at Onyx & Pearl — alfresco dining" class="img-fill" style="aspect-ratio:4/3" />
+          <div class="gallery-teaser__item-overlay"></div>
+          <div class="gallery-teaser__item-label">Garden Terrace</div>
+        </div>
+        <div class="gallery-teaser__item" data-reveal>
+          <!-- replace src="#" with your private dining room image URL -->
+          <img src="content/pearl-chamber.png" alt="Private dining — The Pearl Chamber" class="img-fill" style="aspect-ratio:4/3" />
+          <div class="gallery-teaser__item-overlay"></div>
+          <div class="gallery-teaser__item-label">Private Dining</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FINAL CTA BANNER
+  ═══════════════════════════════════════════════ -->
+  <section style="background:var(--charcoal);padding:var(--section-pad) 0;text-align:center" aria-label="Call to Action">
+    <div class="container--narrow">
+      <div class="section-label t-subtitle" style="color:var(--gold);justify-content:center;margin-bottom:24px" data-reveal>Begin Your Evening</div>
+      <h2 class="t-h1" style="color:var(--cream);margin-bottom:24px" data-reveal>Reserve Your Table<br>at Onyx &amp; Pearl</h2>
+      <p class="t-body-lg" style="color:rgba(236,231,209,0.55);max-width:500px;margin:0 auto 48px" data-reveal>
+        Every great evening begins with a single decision. We look forward
+        to welcoming you to our table.
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap" data-reveal>
+        <a href="reservations.html" class="btn btn--primary btn--large">Reserve a Table</a>
+        <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Onyx &amp; Pearl</div>
+          <div class="footer__brand-sub">Fine Dining · Est. 2018</div>
+          <p class="footer__tagline">
+            A cinematic dining destination where culinary artistry meets
+            exceptional hospitality in the heart of the city.
+          </p>
+          <div class="footer__social" aria-label="Social media">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__col-title">Navigate</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__col-title">Experiences</h3>
+          <ul class="footer__links">
+            <li><a href="reservations.html">Tasting Menu</a></li>
+            <li><a href="reservations.html">Private Dining</a></li>
+            <li><a href="reservations.html">Wine Pairing</a></li>
+            <li><a href="reservations.html">Chef's Table</a></li>
+            <li><a href="reservations.html">Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__col-title">Visit</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Address</span>
+            <span class="footer__contact-value">12 Artisan Quarter<br>Johannesburg, 1542</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Phone</span>
+            <span class="footer__contact-value">+27 (12) 010 2230</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Hours</span>
+            <span class="footer__contact-value">Tuesday–Sunday | 17:00 – 23:00<br>Monday | Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Onyx &amp; Pearl. All rights reserved.</p>
+        <nav class="footer__bottom-links" aria-label="Legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

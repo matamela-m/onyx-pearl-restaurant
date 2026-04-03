@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Onyx & Pearl Fine Dining</title>
+  <meta name="description" content="Explore the Onyx & Pearl menu — artfully crafted starters, mains, desserts, and an exceptional wine selection." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-main">Onyx &amp; Pearl</span>
+        <span class="nav__logo-sub">Fine Dining · Est. 2018</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"        class="nav__link">Home</a></li>
+        <li><a href="menu.html"         class="nav__link active">Menu</a></li>
+        <li><a href="about.html"        class="nav__link">Our Story</a></li>
+        <li><a href="reservations.html" class="nav__link">Reservations</a></li>
+        <li><a href="gallery.html"      class="nav__link">Gallery</a></li>
+        <li><a href="contact.html"      class="nav__link">Contact</a></li>
+      </ul>
+      <a href="reservations.html" class="nav__cta">Reserve a Table</a>
+      <button class="nav__hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html"        class="nav__link">Home</a>
+    <a href="menu.html"         class="nav__link">Menu</a>
+    <a href="about.html"        class="nav__link">Our Story</a>
+    <a href="reservations.html" class="nav__link">Reservations</a>
+    <a href="gallery.html"      class="nav__link">Gallery</a>
+    <a href="contact.html"      class="nav__link">Contact</a>
+    <a href="reservations.html" class="btn btn--primary" style="margin-top:16px">Reserve a Table</a>
+  </div>
+
+  <!-- ── PAGE HERO ── -->
+  <header class="page-hero" aria-label="Menu hero">
+    <div class="page-hero__bg">
+      <!-- replace src="#" with your menu hero image URL -->
+      <img src="#" alt="Onyx & Pearl kitchen — artistry and precision" class="img-fill" style="position:absolute;inset:0" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Spring — Summer 2025</p>
+      <h1 class="page-hero__title">Our Menu</h1>
+      <p class="page-hero__sub">Crafted with obsession. Served with grace.</p>
+    </div>
+  </header>
+
+  <!-- ── MENU CONTROLS ── -->
+  <section style="background:var(--cream);padding:48px 0 0" aria-label="Menu controls">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:40px">
+        <!-- Season Toggle -->
+        <div>
+          <p class="t-subtitle text-gold" style="margin-bottom:12px;letter-spacing:0.2em;font-size:0.65rem">Current Season</p>
+          <div class="season-toggle" role="group" aria-label="Season selection">
+            <button class="season-toggle__btn active" data-season="summer">Summer</button>
+            <button class="season-toggle__btn" data-season="winter">Winter</button>
+          </div>
+        </div>
+        <!-- Note -->
+        <p class="t-small" style="color:rgba(28,28,26,0.45);max-width:360px;line-height:1.7">
+          Our menu changes with the seasons to celebrate the finest available ingredients.
+          Hover over any dish to discover more.
+        </p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" data-tab="starters" role="tab" aria-selected="true">Starters</button>
+        <button class="menu-tab" data-tab="mains"    role="tab" aria-selected="false">Mains</button>
+        <button class="menu-tab" data-tab="desserts" role="tab" aria-selected="false">Desserts</button>
+        <button class="menu-tab" data-tab="wine"     role="tab" aria-selected="false">Wine List</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       STARTERS
+  ═══════════════════════════════════════════════ -->
+  <div class="menu-category active" data-category="starters" role="tabpanel">
+    <div class="container">
+      <div class="menu-section">
+        <h2 class="menu-section__title">Starters &amp; Small Plates</h2>
+        <p class="menu-section__sub">Begin your journey: each starter is a world in miniature</p>
+
+        <div class="menu-grid">
+
+          <!-- Item 1 -->
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/caviar-blinis.png" alt="Ossetra Caviar Blinis" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--chef">Chef's Choice</span>
+              </div>
+              <h3 class="menu-item__name">Ossetra Caviar Blinis</h3>
+              <p class="menu-item__desc">Hand-rolled buckwheat blinis, crème fraîche, shallot, chive</p>
+              <p class="menu-item__desc-hover">Sourced from sustainable aquaculture — a pure expression of brine, butter, and refinement.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R800</span>
+                <span class="menu-item__allergens">GF available · Dairy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="menu-item" data-reveal data-season-menu="summer">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/pea-mint.png" alt="Chilled Pea & Mint Velouté" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--seasonal">Seasonal</span>
+              </div>
+              <h3 class="menu-item__name">Chilled Pea &amp; Mint Velouté</h3>
+              <p class="menu-item__desc">Garden peas, crème fraîche, smoked salmon roe, crispy capers</p>
+              <p class="menu-item__desc-hover">Silky-smooth, garden-fresh, with a smoky finish that lingers like a summer evening.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R450</span>
+                <span class="menu-item__allergens">GF · Dairy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/seared-fole.png" alt="Seared Foie Gras" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <h3 class="menu-item__name">Seared Foie Gras</h3>
+              <p class="menu-item__desc">Brioche toast, Sauternes gel, pickled grapes, hazelnut praline</p>
+              <p class="menu-item__desc-hover">A classic elevated: sweet, rich, with just enough acidity to keep you reaching for more.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R650</span>
+                <span class="menu-item__allergens">Gluten · Tree Nuts</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/heritage-beet.png" alt="Heritage Beet Carpaccio" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--vegan">Vegan</span>
+              </div>
+              <h3 class="menu-item__name">Heritage Beet Carpaccio</h3>
+              <p class="menu-item__desc">Golden &amp; red beets, walnut crumble, herb oil, citrus reduction, edible flowers</p>
+              <p class="menu-item__desc-hover">Earthy sweetness meets bright citrus: a painter's palette on a plate.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R450</span>
+                <span class="menu-item__allergens">GF · Tree Nuts · Vegan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5 -->
+          <article class="menu-item" data-reveal data-season-menu="winter">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/black-truffle.png" alt="Black Truffle Arancini" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--seasonal">Winter Only</span>
+              </div>
+              <h3 class="menu-item__name">Black Truffle Arancini</h3>
+              <p class="menu-item__desc">Carnaroli risotto balls, black truffle, Taleggio, white truffle aioli</p>
+              <p class="menu-item__desc-hover">Decadently comforting: golden-fried arancini hiding a molten truffle heart.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R550</span>
+                <span class="menu-item__allergens">Gluten · Dairy · Egg</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6 -->
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/oyster-rock.png" alt="Oysters Rockefeller" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <h3 class="menu-item__name">Oysters Rockefeller</h3>
+              <p class="menu-item__desc">Six Pacific oysters, spinach gratin, Pernod, breadcrumb, lemon zest</p>
+              <p class="menu-item__desc-hover">An iconic preparation: the ocean's salinity balanced by cream and anise.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R550</span>
+                <span class="menu-item__allergens">GF · Shellfish · Dairy</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       MAINS
+  ═══════════════════════════════════════════════ -->
+  <div class="menu-category" data-category="mains" role="tabpanel">
+    <div class="container">
+      <div class="menu-section">
+        <h2 class="menu-section__title">Main Courses</h2>
+        <p class="menu-section__sub">The heart of our menu: where mastery meets memory</p>
+
+        <div class="menu-grid">
+
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/obsidian-wagyu.png" alt="Obsidian-Seared Wagyu" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--chef">Chef's Choice</span>
+              </div>
+              <h3 class="menu-item__name">Obsidian-Seared Wagyu</h3>
+              <p class="menu-item__desc">A5 Japanese Wagyu striploin, black garlic reduction, truffle oil, bone broth gel, microgreens</p>
+              <p class="menu-item__desc-hover">The pinnacle of our menu: sourced from a single prefecture in Japan, treated with reverence.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R1600</span>
+                <span class="menu-item__allergens">GF · Dairy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/pearl-halibut.png" alt="Pearl Halibut en Papillote" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <h3 class="menu-item__name">Pearl Halibut en Papillote</h3>
+              <p class="menu-item__desc">Pacific halibut, saffron beurre blanc, fennel frond, preserved lemon, Ossetra caviar</p>
+              <p class="menu-item__desc-hover">Steamed in parchment to retain every nuance: finished tableside for theatre and tenderness.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R1200</span>
+                <span class="menu-item__allergens">GF · Fish · Dairy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/roasted-duck.png" alt="Roasted Duck Breast" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--seasonal">Seasonal</span>
+              </div>
+              <h3 class="menu-item__name">Roasted Duck Breast</h3>
+              <p class="menu-item__desc">Heritage duck, Bing cherry jus, celeriac purée, duck fat potato, shaved truffle</p>
+              <p class="menu-item__desc-hover">Slow-roasted for 48 hours, finished skin-side down until lacquered and impossibly crisp.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R1100</span>
+                <span class="menu-item__allergens">GF · Dairy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/garden-harvest.png" alt="Garden Harvest Risotto" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--vegan">Vegetarian</span>
+              </div>
+              <h3 class="menu-item__name">Garden Harvest Risotto</h3>
+              <p class="menu-item__desc">Heirloom vegetables, aged Parmigiano-Reggiano, black winter truffle, herb oil</p>
+              <p class="menu-item__desc-hover">A love letter to the season's best harvest: stirred to perfection over forty-five minutes.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R900</span>
+                <span class="menu-item__allergens">GF · Dairy · V</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/lamb-rack.png" alt="Lamb Rack Provençal" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <h3 class="menu-item__name">Lamb Rack Provençal</h3>
+              <p class="menu-item__desc">New Zealand lamb, herbes de Provence crust, ratatouille, black olive tapenade, rosemary jus</p>
+              <p class="menu-item__desc-hover">Southern French soul: herb-crusted, rosy-pink, with the warmth of the Mediterranean sun.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R1300</span>
+                <span class="menu-item__allergens">GF · Dairy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/lobster-therm.png" alt="Lobster Thermidor" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <h3 class="menu-item__name">Lobster Thermidor</h3>
+              <p class="menu-item__desc">Whole Breton lobster, cognac cream, Gruyère, tarragon, pommes duchesse</p>
+              <p class="menu-item__desc-hover">A timeless French classic: extravagant, indulgent, and absolutely worth every moment.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R1900</span>
+                <span class="menu-item__allergens">GF · Shellfish · Dairy</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       DESSERTS
+  ═══════════════════════════════════════════════ -->
+  <div class="menu-category" data-category="desserts" role="tabpanel">
+    <div class="container">
+      <div class="menu-section">
+        <h2 class="menu-section__title">Desserts</h2>
+        <p class="menu-section__sub">The sweetest possible conclusion to your evening</p>
+
+        <div class="menu-grid">
+
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/val-chocolate.png" alt="Valrhona Chocolate Délice" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--chef">Signature</span>
+              </div>
+              <h3 class="menu-item__name">Valrhona Chocolate Délice</h3>
+              <p class="menu-item__desc">Dark ganache, salted caramel, tonka bean ice cream, gold leaf</p>
+              <p class="menu-item__desc-hover">Our most-requested dessert: intensely chocolate, delicately spiced, impossibly smooth.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R350</span>
+                <span class="menu-item__allergens">Gluten · Dairy · Egg</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-reveal data-season-menu="summer">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/straw-cham.png" alt="Strawberry & Champagne Pavlova" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--seasonal">Summer</span>
+              </div>
+              <h3 class="menu-item__name">Strawberry &amp; Champagne Pavlova</h3>
+              <p class="menu-item__desc">Meringue, Chantilly cream, macerated strawberries, Champagne jelly, basil</p>
+              <p class="menu-item__desc-hover">Light as the season: crisp shells giving way to cloud-like cream and sun-ripened berries.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R300</span>
+                <span class="menu-item__allergens">GF · Dairy · Egg</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-reveal data-season-menu="both">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/tahi-vanilla.png" alt="Tahitian Vanilla Crème Brûlée" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <h3 class="menu-item__name">Tahitian Vanilla Crème Brûlée</h3>
+              <p class="menu-item__desc">Tahitian vanilla custard, caramelised sugar crust, seasonal compote</p>
+              <p class="menu-item__desc-hover">The definitive crème brûlée: the crack of the caramel, the tremble of the custard.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R250</span>
+                <span class="menu-item__allergens">GF · Dairy · Egg</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-reveal data-season-menu="winter">
+            <div class="menu-item__image">
+              <!-- replace src="#" with your image URL -->
+              <img src="content/spiced-pear.png" alt="Spiced Pear Tarte Tatin" class="img-fill" />
+            </div>
+            <div class="menu-item__body">
+              <div class="menu-item__badges">
+                <span class="menu-badge menu-badge--seasonal">Winter</span>
+              </div>
+              <h3 class="menu-item__name">Spiced Pear Tarte Tatin</h3>
+              <p class="menu-item__desc">Caramelised Conference pears, star anise, Calvados, puff pastry, clotted cream</p>
+              <p class="menu-item__desc-hover">Amber, aromatic, and unmistakably autumnal: a warm embrace of spice and sweetness.</p>
+              <div class="menu-item__footer">
+                <span class="menu-item__price">R300</span>
+                <span class="menu-item__allergens">Gluten · Dairy</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Cheese board -->
+        <div style="margin-top:60px;padding:40px;background:var(--warm-tan)" data-reveal>
+          <div style="display:grid;grid-template-columns:1fr auto;align-items:start;gap:24px;flex-wrap:wrap">
+            <div>
+              <p class="t-subtitle text-gold" style="margin-bottom:12px">An Alternative Conclusion</p>
+              <h3 style="font-family:var(--font-serif);font-size:1.5rem;color:var(--charcoal);margin-bottom:12px">Artisan Cheese Board</h3>
+              <p style="font-size:0.875rem;color:rgba(28,28,26,0.65);line-height:1.75;max-width:500px">
+                A rotating selection of six artisanal cheeses, paired with house-made condiments:
+                quince paste, honeycomb, walnut loaf, and seasonal pickles.
+              </p>
+            </div>
+            <div style="text-align:right">
+              <div style="font-family:var(--font-serif);font-size:1.8rem;color:var(--charcoal)">R650</div>
+              <div style="font-size:0.75rem;color:var(--gold);margin-top:4px">For two</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       WINE
+  ═══════════════════════════════════════════════ -->
+  <div class="menu-category" data-category="wine" role="tabpanel">
+    <div class="container">
+      <div class="menu-section">
+        <h2 class="menu-section__title">Wine List</h2>
+        <p class="menu-section__sub">Curated by our Sommelier: over 400 labels from 24 countries</p>
+
+        <!-- White wines -->
+        <div style="margin-bottom:60px">
+          <h3 style="font-family:var(--font-serif);font-size:1.2rem;color:var(--charcoal);margin-bottom:4px;border-bottom:1px solid rgba(28,28,26,0.1);padding-bottom:16px">White Wines</h3>
+          <div class="wine-grid" style="margin-top:28px">
+
+            <div class="wine-card" data-reveal>
+              <div class="wine-card__region">Burgundy, France</div>
+              <h3 class="wine-card__name">Puligny-Montrachet 1er Cru</h3>
+              <div class="wine-card__vintage">Domaine Leflaive · 2021</div>
+              <p class="wine-card__desc">Elegant Chardonnay with mineral precision, white peach, and a lingering hazelnut finish. A benchmark of Burgundian whites.</p>
+              <div class="wine-card__footer">
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Glass</span>
+                  <span class="wine-card__price-value">R700</span>
+                </div>
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Bottle</span>
+                  <span class="wine-card__price-value">R3000</span>
+                </div>
+                <div><span class="wine-card__badge">Somm's Pick</span></div>
+              </div>
+            </div>
+
+            <div class="wine-card" data-reveal>
+              <div class="wine-card__region">Alsace, France</div>
+              <h3 class="wine-card__name">Riesling Grand Cru Schlossberg</h3>
+              <div class="wine-card__vintage">Trimbach · 2020</div>
+              <p class="wine-card__desc">Citrus-forward with petrol notes and a steely acidity. Sublime with our seafood courses.</p>
+              <div class="wine-card__footer">
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Glass</span>
+                  <span class="wine-card__price-value">R450</span>
+                </div>
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Bottle</span>
+                  <span class="wine-card__price-value">R2000</span>
+                </div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="wine-card" data-reveal>
+              <div class="wine-card__region">Napa Valley, USA</div>
+              <h3 class="wine-card__name">Chardonnay Reserve</h3>
+              <div class="wine-card__vintage">Far Niente · 2022</div>
+              <p class="wine-card__desc">Lush and textured with toasted oak, vanilla, and ripe tropical fruit. Classic Napa richness.</p>
+              <div class="wine-card__footer">
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Glass</span>
+                  <span class="wine-card__price-value">R550</span>
+                </div>
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Bottle</span>
+                  <span class="wine-card__price-value">R2200</span>
+                </div>
+                <div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Red wines -->
+        <div style="margin-bottom:60px">
+          <h3 style="font-family:var(--font-serif);font-size:1.2rem;color:var(--charcoal);margin-bottom:4px;border-bottom:1px solid rgba(28,28,26,0.1);padding-bottom:16px">Red Wines</h3>
+          <div class="wine-grid" style="margin-top:28px">
+
+            <div class="wine-card" data-reveal>
+              <div class="wine-card__region">Bordeaux, France</div>
+              <h3 class="wine-card__name">Château Léoville-Barton</h3>
+              <div class="wine-card__vintage">Saint-Julien · 2018</div>
+              <p class="wine-card__desc">Structured and profound: cassis, cedar, graphite, and an eternal finish. Pairs magnificently with the Wagyu.</p>
+              <div class="wine-card__footer">
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Glass</span>
+                  <span class="wine-card__price-value">R800</span>
+                </div>
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Bottle</span>
+                  <span class="wine-card__price-value">R3700</span>
+                </div>
+                <div><span class="wine-card__badge">98 pts</span></div>
+              </div>
+            </div>
+
+            <div class="wine-card" data-reveal>
+              <div class="wine-card__region">Tuscany, Italy</div>
+              <h3 class="wine-card__name">Sassicaia</h3>
+              <div class="wine-card__vintage">Tenuta San Guido · 2019</div>
+              <p class="wine-card__desc">The original Super Tuscan. Dark fruit, herbs, and an unmistakable elegance that rewards patience.</p>
+              <div class="wine-card__footer">
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Glass</span>
+                  <span class="wine-card__price-value">R950</span>
+                </div>
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Bottle</span>
+                  <span class="wine-card__price-value">R4500</span>
+                </div>
+                <div><span class="wine-card__badge">Somm's Pick</span></div>
+              </div>
+            </div>
+
+            <div class="wine-card" data-reveal>
+              <div class="wine-card__region">Ribera del Duero, Spain</div>
+              <h3 class="wine-card__name">Vega Sicilia Único</h3>
+              <div class="wine-card__vintage">2014</div>
+              <p class="wine-card__desc">Spain's most celebrated wine. Plum, vanilla, tobacco — a meditation in complexity and restraint.</p>
+              <div class="wine-card__footer">
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Glass</span>
+                  <span class="wine-card__price-value">R1100</span>
+                </div>
+                <div class="wine-card__price-glass">
+                  <span class="wine-card__price-label">Bottle</span>
+                  <span class="wine-card__price-value">R6500</span>
+                </div>
+                <div><span class="wine-card__badge">Cellar Gem</span></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Champagne -->
+        <div style="padding:40px;background:var(--dark)" data-reveal>
+          <p class="t-subtitle" style="color:var(--gold);margin-bottom:16px;letter-spacing:0.2em">Champagne &amp; Sparkling</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+            <div>
+              <div style="font-family:var(--font-serif);font-size:1rem;color:var(--cream);margin-bottom:4px">Krug Grande Cuvée</div>
+              <div style="font-size:0.75rem;color:rgba(236,231,209,0.45);margin-bottom:8px">Champagne, France · NV</div>
+              <div style="font-family:var(--font-serif);color:var(--gold)">R1500 glass / R5700 bottle</div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-serif);font-size:1rem;color:var(--cream);margin-bottom:4px">Dom Pérignon Rosé</div>
+              <div style="font-size:0.75rem;color:rgba(236,231,209,0.45);margin-bottom:8px">Champagne, France · 2012</div>
+              <div style="font-family:var(--font-serif);color:var(--gold)">R1600 glass / R7200 bottle</div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-serif);font-size:1rem;color:var(--cream);margin-bottom:4px">Billecart-Salmon Brut Blanc</div>
+              <div style="font-size:0.75rem;color:rgba(236,231,209,0.45);margin-bottom:8px">Champagne, France · NV</div>
+              <div style="font-family:var(--font-serif);color:var(--gold)">R650 glass / R2700 bottle</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CTA ── -->
+  <section style="background:var(--warm-tan);padding:60px 0;text-align:center">
+    <div class="container--narrow">
+      <p style="font-family:var(--font-serif);font-size:clamp(1.3rem,3vw,2rem);color:var(--charcoal);margin-bottom:28px" data-reveal>
+        Ready to experience the menu in person?
+      </p>
+      <a href="reservations.html" class="btn btn--primary" data-reveal>Reserve Your Table</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Onyx &amp; Pearl</div>
+          <div class="footer__brand-sub">Fine Dining · Est. 2018</div>
+          <p class="footer__tagline">A cinematic dining destination in the heart of the city.</p>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Navigate</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Experiences</h3>
+          <ul class="footer__links">
+            <li><a href="reservations.html">Tasting Menu</a></li>
+            <li><a href="reservations.html">Private Dining</a></li>
+            <li><a href="reservations.html">Wine Pairing</a></li>
+            <li><a href="reservations.html">Chef's Table</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Visit</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Hours</span>
+            <span class="footer__contact-value">Tuesday–Sunday | 17:00 – 23:00<br>Monday: Closed</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Phone</span>
+            <span class="footer__contact-value">+27 (12) 010 2230</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Onyx &amp; Pearl. All rights reserved.</p>
+        <nav class="footer__bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

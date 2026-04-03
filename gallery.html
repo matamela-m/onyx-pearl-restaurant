@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Onyx & Pearl Fine Dining</title>
+  <meta name="description" content="A curated visual journey through Onyx & Pearl — food, interiors, and ambience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-main">Onyx &amp; Pearl</span>
+        <span class="nav__logo-sub">Fine Dining · Est. 2018</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"        class="nav__link">Home</a></li>
+        <li><a href="menu.html"         class="nav__link">Menu</a></li>
+        <li><a href="about.html"        class="nav__link">Our Story</a></li>
+        <li><a href="reservations.html" class="nav__link">Reservations</a></li>
+        <li><a href="gallery.html"      class="nav__link active">Gallery</a></li>
+        <li><a href="contact.html"      class="nav__link">Contact</a></li>
+      </ul>
+      <a href="reservations.html" class="nav__cta">Reserve a Table</a>
+      <button class="nav__hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html"        class="nav__link">Home</a>
+    <a href="menu.html"         class="nav__link">Menu</a>
+    <a href="about.html"        class="nav__link">Our Story</a>
+    <a href="reservations.html" class="nav__link">Reservations</a>
+    <a href="gallery.html"      class="nav__link">Gallery</a>
+    <a href="contact.html"      class="nav__link">Contact</a>
+    <a href="reservations.html" class="btn btn--primary" style="margin-top:16px">Reserve a Table</a>
+  </div>
+
+  <!-- ── PAGE HERO ── -->
+  <header class="page-hero" aria-label="Gallery hero">
+    <div class="page-hero__bg">
+      <!-- replace src="#" with your gallery hero image URL -->
+      <img src="#" alt="Onyx & Pearl — curated gallery hero" class="img-fill" style="position:absolute;inset:0" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">A Visual Journey</p>
+      <h1 class="page-hero__title">Gallery</h1>
+      <p class="page-hero__sub">Food, space, and the moments in between</p>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════
+       GALLERY SECTION
+  ═══════════════════════════════════════════════ -->
+  <section class="gallery-section" aria-label="Photo gallery">
+    <div class="container--wide">
+
+      <!-- Filter -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:16px">
+        <div class="section-label t-subtitle text-gold" style="justify-content:flex-start">Browse By</div>
+        <p style="font-size:0.8rem;color:rgba(28,28,26,0.45)">Click any image to view in full</p>
+      </div>
+
+      <div class="gallery-filter" role="group" aria-label="Gallery filter">
+        <button class="gallery-filter__btn active" data-filter="all">All</button>
+        <button class="gallery-filter__btn" data-filter="food">Food &amp; Drink</button>
+        <button class="gallery-filter__btn" data-filter="interior">Interior</button>
+        <button class="gallery-filter__btn" data-filter="ambience">Ambience</button>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="masonry-grid" role="list">
+
+        <!-- Food items -->
+        <div class="masonry-item" data-category="food" role="listitem" tabindex="0" aria-label="Pan-Seared Halibut">
+          <!-- replace src="#" with your Pan-Seared Halibut image URL -->
+          <img src="content/pearl-halibut.png" alt="Pan-Seared Halibut — Onyx & Pearl signature dish" class="img-fill" style="aspect-ratio:4/5;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interior -->
+        <div class="masonry-item" data-category="interior" role="listitem" tabindex="0" aria-label="Main Dining Room">
+          <!-- replace src="#" with your Main Dining Room interior image URL -->
+          <img src="content/main-dining.png" alt="Main Dining Room — Onyx & Pearl interior" class="img-fill" style="aspect-ratio:3/4;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ambience -->
+        <div class="masonry-item" data-category="ambience" role="listitem" tabindex="0" aria-label="Evening Atmosphere">
+          <!-- replace src="#" with your Evening Atmosphere image URL -->
+          <img src="content/night-atmosphere.png" alt="Evening Atmosphere — Onyx & Pearl ambience" class="img-fill" style="aspect-ratio:1/1;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food — wide -->
+        <div class="masonry-item" data-category="food" role="listitem" tabindex="0" aria-label="Wagyu Steak Presentation">
+          <!-- replace src="#" with your Wagyu Steak presentation image URL -->
+          <img src="content/obsidian-wagyu.png" alt="Wagyu Steak — Onyx & Pearl signature main course" class="img-fill" style="aspect-ratio:16/9;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interior -->
+        <div class="masonry-item" data-category="interior" role="listitem" tabindex="0" aria-label="The Bar">
+          <!-- replace src="#" with your Bar interior image URL -->
+          <img src="content/the-bar.png" alt="The Bar — Onyx & Pearl bar and lounge" class="img-fill" style="aspect-ratio:4/5;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ambience -->
+        <div class="masonry-item" data-category="ambience" role="listitem" tabindex="0" aria-label="Candlelit Table Setting">
+          <!-- replace src="#" with your Candlelit Table Setting image URL -->
+          <img src="content/candlelit-setup.png" alt="Candlelit Table Setting — Onyx & Pearl ambience" class="img-fill" style="aspect-ratio:3/4;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="masonry-item" data-category="food" role="listitem" tabindex="0" aria-label="Chocolate Délice Dessert">
+          <!-- replace src="#" with your Chocolate Délice dessert image URL -->
+          <img src="content/val-chocolate.png" alt="Chocolate Délice — Onyx & Pearl dessert" class="img-fill" style="aspect-ratio:4/3;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interior — Pearl Chamber -->
+        <div class="masonry-item" data-category="interior" role="listitem" tabindex="0" aria-label="Pearl Chamber Private Dining">
+          <!-- replace src="#" with your Pearl Chamber private dining image URL -->
+          <img src="content/pearl-chamber.png" alt="Pearl Chamber — Onyx & Pearl private dining room" class="img-fill" style="aspect-ratio:1/1;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ambience -->
+        <div class="masonry-item" data-category="ambience" role="listitem" tabindex="0" aria-label="Garden Terrace at Dusk">
+          <!-- replace src="#" with your Garden Terrace at Dusk image URL -->
+          <img src="content/garden-terrace.png" alt="Garden Terrace at Dusk — Onyx & Pearl outdoor setting" class="img-fill" style="aspect-ratio:4/5;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="masonry-item" data-category="food" role="listitem" tabindex="0" aria-label="Chef's Table Amuse-Bouche">
+          <!-- replace src="#" with your Amuse-Bouche image URL -->
+          <img src="content/seven-dishes.png" alt="Chef's Table Amuse-Bouche — Onyx & Pearl tasting course" class="img-fill" style="aspect-ratio:3/4;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interior -->
+        <div class="masonry-item" data-category="interior" role="listitem" tabindex="0" aria-label="Wine Cellar">
+          <!-- replace src="#" with your Wine Cellar image URL -->
+          <img src="content/wine-cell.png" alt="Wine Cellar — Onyx & Pearl curated wine collection" class="img-fill" style="aspect-ratio:1/1;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ambience — Cocktail -->
+        <div class="masonry-item" data-category="ambience" role="listitem" tabindex="0" aria-label="Signature Cocktail">
+          <!-- replace src="#" with your Signature Cocktail image URL -->
+          <img src="content/sig=cocktail.png" alt="Signature Cocktail — Onyx & Pearl bar programme" class="img-fill" style="aspect-ratio:3/4;width:100%" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       LIGHTBOX
+  ═══════════════════════════════════════════════ -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox__content">
+      <button class="lightbox__close" aria-label="Close lightbox">✕</button>
+      <div class="lightbox__image">
+        <!-- JS populates src and alt dynamically when a gallery item is clicked -->
+        <img src="#" alt="" class="img-fill" id="lightbox-img" />
+      </div>
+      <p class="lightbox__caption">Caption</p>
+      <div class="lightbox__nav">
+        <button class="lightbox__nav-btn lightbox__nav-btn--prev" aria-label="Previous image">←</button>
+        <button class="lightbox__nav-btn lightbox__nav-btn--next" aria-label="Next image">→</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CTA ── -->
+  <section style="background:var(--warm-tan);padding:80px 0;text-align:center">
+    <div class="container--narrow">
+      <p style="font-family:var(--font-serif);font-size:clamp(1.4rem,3vw,2.2rem);color:var(--charcoal);margin-bottom:28px" data-reveal>
+        Inspired to visit?
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap" data-reveal>
+        <a href="reservations.html" class="btn btn--primary">Reserve Your Table</a>
+        <a href="menu.html" class="btn btn--outline-dark">Explore the Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Onyx &amp; Pearl</div>
+          <div class="footer__brand-sub">Fine Dining · Est. 2018</div>
+          <p class="footer__tagline">A cinematic dining destination in the heart of the city.</p>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Navigate</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Experiences</h3>
+          <ul class="footer__links">
+            <li><a href="reservations.html">Tasting Menu</a></li>
+            <li><a href="reservations.html">Private Dining</a></li>
+            <li><a href="reservations.html">Wine Pairing</a></li>
+            <li><a href="reservations.html">Chef's Table</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Visit</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Hours</span>
+            <span class="footer__contact-value">Tuesday–Sunday | 17:00 – 23:00<br>Monday: Closed</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Phone</span>
+            <span class="footer__contact-value">+27 (12) 010 2230</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Onyx &amp; Pearl. All rights reserved.</p>
+        <nav class="footer__bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
