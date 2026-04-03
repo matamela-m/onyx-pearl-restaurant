@@ -2184,18 +2184,35 @@ input, textarea, select { font-family: inherit; }
   padding: var(--section-pad) 0;
   background: var(--cream);
 }
+.gallery-filter__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.gallery-filter__hint {
+  font-size: 0.8rem;
+  color: rgba(28,28,26,0.45);
+}
 .gallery-filter {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   margin-bottom: 48px;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
+.gallery-filter::-webkit-scrollbar { display: none; }
 .gallery-filter__btn {
   padding: 10px 24px;
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
   font-weight: 600;
   color: rgba(28,28,26,0.45);
   border: 1px solid transparent;
@@ -2350,6 +2367,14 @@ input, textarea, select { font-family: inherit; }
   cursor: pointer;
 }
 .lightbox__nav-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Pearl Chamber grid (reservations page) */
+.pearl-chamber__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 8vw, 100px);
+  align-items: center;
+}
 
 /* ============================================================
    CONTACT PAGE
@@ -2543,6 +2568,7 @@ input, textarea, select { font-family: inherit; }
   .about-intro__grid { grid-template-columns: 1fr; }
   .chef-section__grid { grid-template-columns: 1fr; }
   .reservation-layout { grid-template-columns: 1fr; }
+  .pearl-chamber__grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .gallery-teaser__grid { grid-template-columns: 1fr 1fr; }
   .gallery-teaser__item--tall { grid-row: auto; }
@@ -2672,7 +2698,8 @@ img[src="#"] {
   .menu-tabs           { flex-wrap: nowrap; overflow-x: auto; }
   .season-toggle__btn  { padding: 10px 16px; }
   .intro-strip__inner  { flex-direction: column; gap: 16px; align-items: flex-start; }
-  .gallery-filter      { flex-wrap: wrap; gap: 4px; }
+  .gallery-filter__btn { padding: 9px 16px; }
+  .gallery-filter__hint { display: none; }
   .floor-plan__inner   { grid-template-columns: repeat(3, 1fr); min-height: 300px; }
   .table-btn           { width: 36px; height: 36px; font-size: 0.45rem; }
   .chef-section__award { position: static; margin-top: 16px; }
