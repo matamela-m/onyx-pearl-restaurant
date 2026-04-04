@@ -2591,6 +2591,10 @@ input, textarea, select { font-family: inherit; }
   .floor-plan { padding: 24px; }
   .floor-plan__inner { padding: 16px; gap: 12px; }
   .table-btn { width: 42px; height: 42px; }
+  .availability-indicator { padding: 20px 16px; gap: 12px; }
+  .avail-item { flex-wrap: wrap; gap: 6px; }
+  .avail-item__label { flex: 1 1 auto; min-width: 0; }
+  .avail-item__status { flex-shrink: 0; }
 }
 
 @media (max-width: 480px) {
